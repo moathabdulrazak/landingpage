@@ -37,7 +37,27 @@
 		  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
 </head>
-<body>
+
+
+<style>
+  body.debug .container,
+  body.debug .container-fluid {
+    outline: 2px double blue;
+    outline-offset: -2px;
+  }
+
+  body.debug .row {
+    outline: 2px dashed red;
+    outline-offset: -2px;
+  }
+
+  body.debug [class*="col-"] {
+    outline: 2px dotted forestgreen;
+    outline-offset: -3px;
+  }
+</style>
+
+<body class="">
     <!-- START PRELOADER -->
     <div class="preloader">
         <div class="status">
@@ -158,7 +178,7 @@
                         <h2 class="wow fadeInUp" data-wow-delay="0.4s">I'm 26 years old Developer and Designer. Focused on education and accessibility!</h2>
                         <p class="wow fadeInUp" data-wow-delay="0.6s">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining </p>
 
-                        <ul class="wow fadeInUp" data-wow-delay="0.8s">
+                        <!-- <ul class="wow fadeInUp" data-wow-delay="0.8s">
                             <li>HTML/CSS</li>
                             <li>BootStrap</li>
                             <li>JavaScript</li>
@@ -169,7 +189,7 @@
                             <li>MySQL</li>
                             <li>GIT</li>
                             <li>Scrum/Agile</li>
-                        </ul>
+                        </ul> -->
                     </div>
                     <!-- / END ABOUT TEXT AREA -->
                 </div>
@@ -183,7 +203,7 @@
     <section id="service" class="service-area section-padding">
         <div class="container">
             <div class="row">
-                <div class="col-sm-12">
+                <div class="col-md-12">
                     <div class="section-title">
                         <h2>My Skills</h2>
                     </div>
@@ -191,38 +211,80 @@
             </div>
             <div class="row">
                 <!-- START SINGLE SERVICE DESIGN AREA -->
-                <div class="col-md-6 col-sm-6">
+                <div class="col-md-2">
                     <div class="single-service wow fadeInUp" data-wow-delay="0.2s">
-                        <i class="fa fa-building"></i>
-                        <!-- <h2>Branding & identity</h2> -->
-                        <!-- <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry.</p> -->
+                        <img class="img-fluid fs-6" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original-wordmark.svg" />
                     </div>
                 </div>
                 <!-- / END SINGLE SERVICE DESIGN AREA -->
                 <!-- START SINGLE SERVICE DESIGN AREA -->
-                <div class="col-md-6 col-sm-6">
+                <div class="col-md-2">
                     <div class="single-service wow fadeInUp" data-wow-delay="0.4s">
-                        <i class="fa fa-keyboard-o"></i>
-                        <!-- <h2>Web design & Development</h2> -->
-                        <!-- <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry.</p> -->
+                        <img class="img-fluid fs-6" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-plain.svg" />
                     </div>
                 </div>
                 <!-- / END SINGLE SERVICE DESIGN AREA -->
                 <!-- START SINGLE SERVICE DESIGN AREA -->
-                <div class="col-md-6 col-sm-6">
+                <div class="col-md-2">
                     <div class="single-service wow fadeInUp" data-wow-delay="0.6s">
-                        <i class="fa fa-paper-plane"></i>
-                        <!-- <h2>social media marketing</h2> -->
-                        <!-- <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry.</p> -->
+                        <img class="img-fluid fs-6" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-plain-wordmark.svg" />
                     </div>
                 </div>
                 <!-- / END SINGLE SERVICE DESIGN AREA -->
                 <!-- START SINGLE SERVICE DESIGN AREA -->
-                <div class="col-md-6 col-sm-6">
+                <div class="col-md-2">
                     <div class="single-service wow fadeInUp" data-wow-delay="0.8s">
-                        <i class="fa fa-deaf"></i>
-                        <!-- <h2>24 hour friendly support</h2> -->
-                        <!-- <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry.</p> -->
+                        <img class="img-fluid fs-6" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" />
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <div class="single-service wow fadeInUp" data-wow-delay="0.10s">
+                        <img class="img-fluid fs-6" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-plain.svg" />
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <div class="single-service wow fadeInUp" data-wow-delay="0.12s">
+                        <img class="img-fluid fs-6" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vuejs/vuejs-plain-wordmark.svg" />
+                    </div>
+                </div>
+                <!-- / END SINGLE SERVICE DESIGN AREA -->
+            </div>
+            <div class="row justify-content-center">
+                <!-- START SINGLE SERVICE DESIGN AREA -->
+                <div class="col-md-2">
+                    <div class="single-service wow fadeInUp" data-wow-delay="0.2s">
+                        <img class="img-fluid fs-6" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-plain-wordmark.svg" />
+                    </div>
+                </div>
+                <!-- / END SINGLE SERVICE DESIGN AREA -->
+                <!-- START SINGLE SERVICE DESIGN AREA -->
+                <div class="col-md-2">
+                    <div class="single-service wow fadeInUp" data-wow-delay="0.4s">
+                        <img class="img-fluid fs-6" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-plain.svg" />
+                    </div>
+                </div>
+                <!-- / END SINGLE SERVICE DESIGN AREA -->
+                <!-- START SINGLE SERVICE DESIGN AREA -->
+                <div class="col-md-2">
+                    <div class="single-service wow fadeInUp" data-wow-delay="0.6s">
+                        <img class="img-fluid fs-6" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-plain-wordmark.svg" />
+                    </div>
+                </div>
+                <!-- / END SINGLE SERVICE DESIGN AREA -->
+                <!-- START SINGLE SERVICE DESIGN AREA -->
+                <div class="col-md-2">
+                    <div class="single-service wow fadeInUp" data-wow-delay="0.8s">
+                        <img class="img-fluid fs-6" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-plain-wordmark.svg" />
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <div class="single-service wow fadeInUp" data-wow-delay="0.10s">
+                        <img class="img-fluid fs-6" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sass/sass-original.svg" />
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <div class="single-service wow fadeInUp" data-wow-delay="0.12s">
+                        <img class="img-fluid fs-6" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original-wordmark.svg" />
                     </div>
                 </div>
                 <!-- / END SINGLE SERVICE DESIGN AREA -->
@@ -238,16 +300,16 @@
             <div class="row">
                 <div class="col-sm-12">
                     <div class="section-title">
-                        <h2>featured works.</h2>
+                        <h2>Featured Projects.</h2>
                     </div>
                 </div>
             </div>
             <div class="row">
                 <ul class="work">
                     <li class="filter" data-filter="all">all</li>
-                    <li class="filter" data-filter=".webdesign">webdesign</li>
-                    <li class="filter" data-filter=".development">development</li>
-                    <li class="filter" data-filter=".photography">photography</li>
+                    <li class="filter" data-filter=".webdesign">Vanilla JS</li>
+                    <li class="filter" data-filter=".development">Vue.JS + Node.JS</li>
+                    <li class="filter" data-filter=".photography">Vue.JS + C#</li>
                 </ul>
             </div>
             <div class="work-inner">
