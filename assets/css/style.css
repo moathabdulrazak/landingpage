@@ -650,6 +650,11 @@ ul.work li.active {
     width: 100%;
 }
 
+.flex-row{
+    display: flex!important;
+    flex-wrap: wrap!important;
+}
+
 .work .grid figure {
     position: relative;
     float: left;
