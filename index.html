@@ -30,6 +30,9 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <!-- RESPONSIVE CSS -->
     <link rel="stylesheet" href="assets/css/responsive.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Monoton&display=swap" rel="stylesheet">
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -156,27 +159,31 @@
 
     <!-- START ABOUT DESIGN AREA -->
     <section id="about" class="about-me-area section-padding">
-        <div class="container">
+        <div class="container-fluid">
             <div class="row">
-                <div class="col-sm-12">
+                <div class="col-md-12">
                     <div class="section-title">
-                        <h2 class="header-text">About Me</h2>
+                        <p class="neon" data-text="U">AB<span class="flicker-slow">O</span>U<span class="flicker-fast">T</span>   M<span class="flicker-slow">E</span></p>
                     </div>
                 </div>
             </div>
             <div class="row">
                 <div class="col-md-6">
                     <!-- START ABOUT IMAGE AREA -->
-                    <div class="about-image">
-                        <img src="assets/images/me.jpg" alt="">
+                    <div class="text-center">
+                        <img class="img-fluid me-img" src="assets/images/me-img.jpeg" alt="">
                     </div>
                     <!-- / END ABOUT IMAGE AREA -->
                 </div>
                 <div class="col-md-6">
                     <!-- START ABOUT TEXT AREA -->
                     <div class="about-text">
-                        <h2 class="wow fadeInUp" data-wow-delay="0.4s">I'm 26 years old Developer and Designer. Focused on education and accessibility!</h2>
-                        <p class="wow fadeInUp" data-wow-delay="0.6s">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining </p>
+                        <h2 class="wow fadeInUp" data-wow-delay="0.4s">I'm 26 years old Full-Stack Developer. Passionate about front-end development and user friendly design!</h2>
+                        <p class="wow fadeInUp" data-wow-delay="0.6s">When I was a kid I used to share a blog with my friends about the 'struggles' of middle school life. While they were more invested in the content of said blog, I was OBSESSED with tweaking and changing the HTML template - simple things like making a solid background more translucent, adding a background image, or changing the color or style of the font, made me so unbelievably excited. 
+
+                        After graduating from Boise State University in 2021 I decided to revisit my interest in software development. Since then, I haven't been able to get enough. Software development has called to all my passions, particularly my love for applying problem solving techniques to complex problems, while also allowing me freedom and flexibility to apply my own creativity in design. 
+
+                        My specialties and experience include being a quick learner, creative problem solving, implementing responsive design principles, Model View Controller (MVC) design pattern, and RESTful API architectural style. So far I have experience in HTML, CSS, JavaScript, Node.js, Vue.js, MongoDB, and MySQL.</p>
 
                         <!-- <ul class="wow fadeInUp" data-wow-delay="0.8s">
                             <li>HTML/CSS</li>
@@ -205,15 +212,15 @@
             <div class="row">
                 <div class="col-md-12">
                     <div class="section-title">
-                        <h2>My Skills</h2>
+                        <p class="neon" data-text="U"> <span class="flicker-slow">M</span>Y S<span class="flicker-fast">K</span>IL<span class="flicker-slow">LS</span></p>
                     </div>
                 </div>
             </div>
-            <div class="row">
+            <div class="row row-one-pad">
                 <!-- START SINGLE SERVICE DESIGN AREA -->
                 <div class="col-md-2">
                     <div class="single-service wow fadeInUp" data-wow-delay="0.2s">
-                        <img class="img-fluid fs-6" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original-wordmark.svg" />
+                        <img class="img-fluid lang-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original-wordmark.svg" />
                     </div>
                 </div>
                 <!-- / END SINGLE SERVICE DESIGN AREA -->
@@ -249,7 +256,7 @@
                 </div>
                 <!-- / END SINGLE SERVICE DESIGN AREA -->
             </div>
-            <div class="row justify-content-center">
+            <div class="row row-two-pad">
                 <!-- START SINGLE SERVICE DESIGN AREA -->
                 <div class="col-md-2">
                     <div class="single-service wow fadeInUp" data-wow-delay="0.2s">
@@ -300,7 +307,7 @@
             <div class="row">
                 <div class="col-sm-12">
                     <div class="section-title">
-                        <h2>Featured Projects.</h2>
+                        <p class="neon" data-text="U">FE<span class="flicker-slow">A</span>TU<span class="flicker-fast">R</span>ED  P<span class="flicker-fast">RO</span>JE<span class="flicker-slow">T</span><span class="flicker-fast">S</span></p>
                     </div>
                 </div>
             </div>
@@ -419,7 +426,7 @@
             <div class="row">
                 <div class="col-sm-12">
                     <div class="section-title">
-                        <h2>Reviews!</h2>
+                        <p class="neon" data-text="U">R<span class="flicker-slow">E</span>VI<span class="flicker-fast">E</span>WS</p>
                     </div>
                 </div>
             </div>
@@ -428,16 +435,16 @@
                     <div class="testimonial-list">
                         <!-- START SINGLE TESTIMONIAL DESIGN AREA -->
                         <div class="single-testimonial text-center">
-                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s Lorem Ipsum.</p>
-                            <h2>mark jukarbarg</h2>
-                            <h3>CEO facebook</h3>
+                            <p>Savannah and I were apart of a stellar group for our finishing capstone project. On our day to day basis, Savannah was very punctual and integral to getting our tasks and sprints done in an orderly fashion that worked hand in hand with her stellar organizational skills. Savannah made sure that our group was always communicating and on the same page while also building, developing, and providing insight in many aspects of our project. She played a vital role in our group project and I would love to work with her again in the future.</p>
+                            <h2>Jonathon McNamara</h2>
+                            <h3>Boise CodeWorks</h3>
                         </div>
                         <!-- / END SINGLE TESTIMONIAL DESIGN AREA -->
                         <!-- START SINGLE TESTIMONIAL DESIGN AREA -->
                         <div class="single-testimonial text-center">
-                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s Lorem Ipsum.</p>
-                            <h2>mark jukarbarg</h2>
-                            <h3>CEO facebook</h3>
+                            <p>I had the opportunity to work with Savannah on the full-stack application “Magic Medley”. This was a complicated, feature-rich application that we had to complete within two weeks. Our success in this project was due in large part to the organizational and leadership skills of Savannah. Savannah is a leader. She settled naturally into the role of shepherd and secretary, reminding us regularly of the big picture, the current objectives, and the next steps we should take. She managed the Trello board and was relentless in her patient reminders to update our work on the board. She also led the sprint meetings and helped keep us on track with the sprint backlog. Savannah found time to do all this leadership while also being fully immersed in the hands-on coding of our project. She tackled difficult features like our robust search and filter functions and the layout and functionality of the guild pages. I would absolutely recommend Savannah as a member of any development team, she is hard-working, organized, and fun to work with, even in high-stress situations. I am certain she will be a great addition to any team!</p>
+                            <h2>Christopher Hildebrandt</h2>
+                            <h3>Boise CodeWorks</h3>
                         </div>
                         <!-- / END SINGLE TESTIMONIAL DESIGN AREA -->
                         <!-- START SINGLE TESTIMONIAL DESIGN AREA -->
@@ -462,7 +469,8 @@
             <div class="row">
                 <div class="col-md-12">
                     <div class="section-title">
-                        <h2>contact me!</h2>
+                        <p class="neon" data-text="U"><span class="flicker-fast">C</span>ON<span class="flicker-slow">T</span>ACT M<span class="flicker-fast">E</span></p>
+                        <p>Have a question or want to work together? Leave your details and I'll get back to you as soon as possible.</p>
                     </div>
                 </div>
             </div>
@@ -504,11 +512,11 @@
                 <div class="col-sm-12 text-center wow fadeInUp" data-wow-delay="0.2s">
                     <div class="social-links">
                         <ul>
-                            <li><a href=""><i class="fa fa-facebook"></i></a></li>
-                            <li><a href=""><i class="fa fa-twitter"></i></a></li>
-                            <li><a href=""><i class="fa fa-google-plus"></i></a></li>
-                            <li><a href=""><i class="fa fa-dribbble"></i></a></li>
-                            <li><a href=""><i class="fa fa-instagram"></i></a></li>
+                            <li><a href="" title="LinkedIn"><i class="fa fa-linkedin"></i></a></li>
+                            <li><a href="" title="GitHub"><i class="fa fa-github"></i></a></li>
+                            <!-- <li><a href="" title="G-Mail"><i class="fa fa-google"></i></a></li> -->
+                            <!-- <li><a href=""><i class="fa fa-dribbble"></i></a></li> -->
+                            <!-- <li><a href=""><i class="fa fa-instagram"></i></a></li> -->
                         </ul>
                     </div>
                     <p>&copy;Copyright 2017 Monster | All RightReserved.</p>

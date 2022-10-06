@@ -44,6 +44,49 @@ body {
     color: #cd3c74;
 }
 
+.neon{
+    font-family: 'Monoton', cursive;
+    font-size: 80px;
+    color: #FFD5FF;
+    padding-bottom: .3em;
+    padding-top: .3em;
+    /* position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); */
+    font-weight: 300;
+    letter-spacing: 5px;
+    text-shadow: 
+    1px 0px 4px #FFD5FF, 
+    2px 0px 4px #FFD5FF, 
+    3px 0px 4px #FFD5FF, 
+    2px 0px 3px #D42CCA, 
+    2px 3px 15px #D42CCA, 
+    2px 0px 15px, 
+    5px 0px 125px, 
+    20px 0vw 200px #D42CCA, 
+    40px 0vw 200px #D42CCA;
+}
+
+.flicker-slow{
+    animation: flicker 3s linear infinite;
+}
+
+.flicker-fast{
+    animation: flicker 1s linear infinite;
+}
+
+@keyframes flicker{
+    0%, 19.999%, 22%, 62.999%, 64%, 64.999%, 70%, 100%{
+        /* text-shadow: none; */
+        opacity: .99;
+    }
+    20%, 21.999%, 63%, 63.999%, 65%, 69.999% {
+        opacity: 0.4;
+    }
+}
+
+
 html,
 body {
     height: 100%
@@ -110,16 +153,16 @@ fieldset {
     margin-bottom: 60px;
 }
 
-.section-title h2 {
+/* .section-title h2 {
     margin-top: 0;
     font-weight: 900;
     text-transform: capitalize;
     font-size: 45px;
-}
+} */
 
-.section-title p {
+/* .section-title p {
     font-weight: 300;
-}
+} */
 
 
 /*
@@ -520,7 +563,14 @@ fieldset {
 * ----------------------------------------------------------------------------------------
 */
 
-/* .about-image {} */
+.about-me-area {
+    background-color: #222222;
+}
+
+.me-img{
+    max-height: 60%;
+    max-width: 60%;
+}
 
 .about-text h2 {
     font-size: 12px;
@@ -555,10 +605,25 @@ fieldset {
 * ----------------------------------------------------------------------------------------
 */
 
-.service-area {}
+.service-area {
+    background-color: #222222;
+}
 
-.single-service i {
-    font-size: 40px;
+.row-one-pad{
+    padding-top: 5em;
+}
+
+.row-two-pad{
+    padding-top: 3em;
+    padding-bottom: 5em;
+}
+
+/* .lang-icon{
+    padding: 10px;
+} */
+
+/* .single-service i {
+    font-size: 30px;
     margin-bottom: 10px;
     -webkit-transition: .3s;
     transition: .3s;
@@ -572,9 +637,9 @@ fieldset {
     float: left;
     margin-right: 25px;
     margin-bottom: 50px;
-}
+} */
 
-.single-service h2 {
+/* .single-service h2 {
     font-size: 12px;
     text-transform: uppercase;
     margin: 20px 0px;
@@ -583,11 +648,11 @@ fieldset {
     color: #dfdcdc;
     letter-spacing: 2px;
     font-weight: 700;
-}
+} */
 
-.single-service p {
+/* .single-service p {
     color: #dfdcdc;
-}
+} */
 
 
 /*
@@ -597,7 +662,7 @@ fieldset {
 */
 
 .work {
-    background: #353535;
+background-color: #222222;
 }
 
 .work-inner .mix {
@@ -618,7 +683,7 @@ ul.work li {
     text-transform: uppercase;
     font-size: 14px;
     font-weight: 300;
-    color: #938d8d;
+    color: #ededed;
     border: none;
     cursor: pointer;
     font-size: 12px;
@@ -716,7 +781,7 @@ ul.work li.active {
 */
 
 .testimonial-area {
-    background: #F7F7F7;
+    background-color: #222222;
 }
 
 .testimonial-list {}
@@ -726,7 +791,7 @@ ul.work li.active {
     text-transform: uppercase;
     -webkit-transition: .3s;
     transition: .3s;
-    color: #232323;
+    color: #ffffff;
     letter-spacing: 2px;
     font-weight: 700;
 }
@@ -758,9 +823,11 @@ ul.work li.active {
 * ----------------------------------------------------------------------------------------
 */
 
-.contact-me-area {}
+.contact-me-area {
+    background-color: #222222;
+}
 
-.form-control {
+/* .form-control {
     display: block;
     border: 0px;
     width: 100%;
@@ -774,7 +841,7 @@ ul.work li.active {
     border-radius: 0px;
     box-shadow: none;
     margin-bottom: 25px;
-}
+} */
 
 .form-control:focus {
     border-color: #000;
@@ -831,8 +898,8 @@ ul.work li.active {
 */
 
 .footer-area {
-    background: #F7F7F7;
-    padding: 80px 0px;
+    background: #39054a;
+    padding: 0px 0px;
 }
 
 .social-links ul {
@@ -846,7 +913,7 @@ ul.work li.active {
 
 .social-links ul li a {
     font-size: 18px;
-    color: #222222;
+    color: #fafafa;
     margin: 25px 10px;
     display: block;
 }
@@ -857,9 +924,10 @@ ul.work li.active {
 
 .footer-area p {
     margin-bottom: 0;
-    font-size: 14px;
-    color: #222222;
+    font-size: 16px;
+    color: #fafafa;
 }
+
 
 
 /*
