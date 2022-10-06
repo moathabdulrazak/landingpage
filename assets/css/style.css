@@ -106,7 +106,7 @@ a {
     -webkit-transition: all 0.4s;
     -webkit-transition: all 0.2s;
     transition: all 0.2s;
-    color: #000;
+    color: rgb(240, 38, 200);
 }
 
 img {
@@ -151,6 +151,7 @@ fieldset {
 .section-title {
     text-align: center;
     margin-bottom: 60px;
+    padding-top: 2em;
 }
 
 /* .section-title h2 {
