@@ -47,7 +47,7 @@ body {
 .neon {
     font-family: 'Monoton', cursive;
     font-size: 80px;
-    color: #FFD5FF;
+    color: #ff0000;
     padding-bottom: .3em;
     padding-top: .3em;
     /* position: absolute;
@@ -57,15 +57,15 @@ body {
     font-weight: 300;
     letter-spacing: 5px;
     text-shadow:
-        1px 0px 4px #FFD5FF,
-        2px 0px 4px #FFD5FF,
-        3px 0px 4px #000000,
-        2px 0px 3px #2cced4,
-        2px 3px 15px #15b7bd,
+        1px 0px 4px #9e1e1e,
+        2px 0px 4px #a7454c,
+        3px 0px 4px #782e2e,
+        2px 0px 3px #d43f3f,
+        2px 3px 15px #b2444c,
         2px 0px 15px,
         5px 0px 125px,
-        20px 0vw 200px #086f6c,
-        40px 0vw 200px #005064;
+        20px 0vw 200px #6f080a,
+        40px 0vw 200px #640000;
 }
 
 .flicker-slow {
@@ -455,6 +455,11 @@ fieldset {
     background: #000;
 }
 
+.project-vfx {
+    display: flex;
+    padding: 1em;
+}
+
 .menu-bg .logo {
     padding-top: 18px;
     -webkit-transition: all 0.3s ease-out;
@@ -687,6 +692,10 @@ fieldset {
     background-color: #222222;
 }
 
+.work-text {
+    color: #00BFF3;
+}
+
 .work-inner .mix {
     display: none;
 }
@@ -761,6 +770,18 @@ ul.work li.active {
     background: #000;
 }
 
+.img-size {
+    height: 35vh;
+    position: center;
+    background-position: center;
+    background-size: cover;
+}
+
+.img-size:hover {
+    transform: scale(1.05);
+    box-shadow: solid black 10em;
+}
+
 .work figure.effect-ruby h2 {
     margin-top: 20%;
     opacity: 0;
@@ -803,7 +824,7 @@ ul.work li.active {
 */
 
 .testimonial-area {
-    background-color: #222222;
+    background-color: #000000;
 }
 
 .testimonial-list {}
@@ -816,6 +837,11 @@ ul.work li.active {
     color: #ffffff;
     letter-spacing: 2px;
     font-weight: 700;
+}
+
+.padding-vfx {
+    padding: 1em;
+    margin-top: 1em;
 }
 
 .single-testimonial h3 {
@@ -835,7 +861,7 @@ ul.work li.active {
     height: 5px;
     margin: 5px 7px;
     border-radius: 20px;
-    background: #000;
+    background: rgb(255, 255, 255);
 }
 
 
@@ -846,7 +872,7 @@ ul.work li.active {
 */
 
 .contact-me-area {
-    background-color: #222222;
+    background-color: #000000;
 }
 
 /* .form-control {
